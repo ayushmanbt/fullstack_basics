@@ -1,0 +1,28 @@
+/* These are some default styles, not important for this specific class */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body{
+    padding: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #333384;
+    transition: background-color 0.3s ease;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}
+
+button:hover{
+    background-color: #171741;
+}
