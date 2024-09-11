@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #d2f0d6;
+    padding: 40px;
+}
+
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.box{
+    text-align: center;
+    vertical-align: middle;
+    padding: 40px;
+}
+
+.box:nth-child(odd){
+    background-color: #222;
+    color: white;
+}
+
+.box:nth-child(even){
+    background-color: #ccc;
+    border: 2px solid black;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
