@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100dvh;
+    background-color: #191e2d;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+
+.card{
+    background-color: #424a62;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 600px;
+    position: relative;
+}
+
+.card p{
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.card #setup{
+    color: #aaa;
+    font-size: 1.8rem;
+}
+
+.card button{
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: aquamarine;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card button:hover{
+    background-color: #2cc290;
+}
