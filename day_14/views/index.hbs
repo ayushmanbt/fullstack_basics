@@ -1,0 +1,20 @@
+<h1>Todos App</h1>
+
+<form method="post" action="/">
+    <input type="text" name="todo" required id="">
+    <input type="submit" value="Add todo" >
+</form>
+
+{{#if message}}
+    {{message}}
+{{/if}}
+
+<ul>
+    {{#each todos}}
+        {{#with this}}
+            <li>
+                {{name}} - {{isDone}}
+            </li>
+        {{/with}}
+    {{/each}}
+</ul>

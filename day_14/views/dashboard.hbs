@@ -1,0 +1,14 @@
+<h3>Super secure dashboard</h3>
+
+
+{{#unless isLoggedIn}}
+Please log in!
+{{/unless}}
+
+<ul>
+    {{#each tasks}}
+        {{#with this}}
+        <li>{{isDone}}</li>
+        {{/with}}
+    {{/each}}
+</ul>
