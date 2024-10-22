@@ -24,10 +24,11 @@ const todo_list_container = document.getElementById("todo_list")
 function update() {
     todo_list_container.innerHTML = ""
     todos.forEach(todo => {
+        //check the new addition to the checkbox
         todo_list_container.innerHTML += 
         `
         <div class="todo_list_item">
-            <input type="checkbox" id="todo_checkbox_${todo.id}">
+            <input type="checkbox" id="todo_checkbox_${todo.id}" ${todo.isDone && "checked"}>
             <span>${todo.text}</span>
             <button id="todo_delete_${todo.id}">Delete Todo</button>
         </div> 
@@ -44,8 +45,25 @@ function update() {
             // .filter()
             // .sorted()
         })
+        //This is how we keep the update of checkboxes
+        document.getElementById(`todo_checkbox_${todo.id}`).addEventListener("click", () => {
+
+            todos = todos.map((e) => {
+                if(e.id == todo.id){
+                    e.isDone = !e.isDone
+                } 
+                return e
+            });
+            update();
+            // .map()
+            // .reduce()
+            // .filter()
+            // .sorted()
+        })
     })
 }
+
+/* arrow function explained */
 
 //() => {function body }
 

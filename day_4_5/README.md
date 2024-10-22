@@ -21,6 +21,8 @@ Upto now we have implemented
 - challenge for you is to take the code and implement a system so that you can fix the todo status resetting on deleting the todo
 - we learnt about the `*` selector to select anything in HTML
 - (BONUS) We talked a bit about psudoelements.
+- This code now contains the solution to storing the checkbox value
+
 
 ## Resources
 
